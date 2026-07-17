@@ -1,3 +1,52 @@
-node_modules
+# VS Code workspace settings
+.vscode/
+
+# VS Code extension template notes
+vsc-extension-quickstart.md
+
+
+# Dependencies
+node_modules/
+
+# Build output
+out/
+dist/
+build/
+
+# Packaged VS Code extensions
 *.vsix
+
+# Test coverage and reports
+coverage/
+.nyc_output/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Environment files
 .env
+.env.*
+!.env.example
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Java build output, if the parser/server is added to this repository
+target/
+*.class
+
+# IDE metadata
+.idea/
+*.iml
