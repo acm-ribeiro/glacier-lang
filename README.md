@@ -21,7 +21,7 @@
 
 <div align="center">
   <span style="font-size: 2em; font-weight: bold;">
-    Gʟᴀᴄɪᴇʀ Language Support for Visual Studio Code
+    <strong>Gʟᴀᴄɪᴇʀ Language Support for Visual Studio Code</strong>
   </span>
 </div>
 
