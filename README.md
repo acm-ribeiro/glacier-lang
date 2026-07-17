@@ -1,8 +1,30 @@
-# Glacier Language Support for Visual Studio Code
 
-Syntax highlighting and editor support for the **Glacier specification language** in Visual Studio Code.
+<table align="center">
+  <tr>
+    <td>
+<pre style="background: transparent; border: none;">
+               _/\_         _/\_
+          _/\_/    \_/\_/\_/    \_/\
+      _/\_/                        \_\_/\
+  ___/                                  \___
+ /__________________________________________\
+ /           █▀▀ █   ▄▀█ █▀▀ █ █▀▀ █▀█      \
+ /           █▄█ █▄▄ █▀█ █▄▄ █ ██▄ █▀▄      \
+ /__________________________________________\
+ \\\\      ////      ////      ////      ////
+  \\\\____////______////______////______////
+</pre>
+    </td>
+  </tr>
+</table>
 
-Glacier files use the `.glc` extension and describe API invariants, preconditions, and postconditions alongside HTTP operations.
+<div align="center">
+  <span style="font-size: 2em; font-weight: bold;">
+    Gʟᴀᴄɪᴇʀ Language Support for Visual Studio Code
+  </span>
+</div>
+
+---
 
 ## Features
 
