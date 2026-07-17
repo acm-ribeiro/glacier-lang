@@ -1,0 +1,14 @@
+invariants:
+  - response_code(this) == 200
+
+POST /orders:
+  requires:
+    - request_body(this).quantity > 0
+  ensures:
+    - response_code(this) == 201 && response_body(this).status != nil
+
+GET /orders/{id}:
+  requires:
+    - path_param(this["id"]) != nil
+  ensures:
+    - for x in response_body(this) : x.status == "created"
