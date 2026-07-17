@@ -1,0 +1,25 @@
+{
+  "name": "glacier",
+  "displayName": ".glc",
+  "description": "Glacier specification language support. ",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "glacier",
+      "aliases": ["Glacier", "glacier"],
+      "extensions": [".glc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "glacier",
+      "scopeName": "source.glacier",
+      "path": "./syntaxes/glacier.tmLanguage.json"
+    }]
+  }
+}
