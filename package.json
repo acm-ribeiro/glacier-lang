@@ -1,25 +1,50 @@
 {
   "name": "glacier",
-  "displayName": ".glc",
-  "description": "Glacier specification language support. ",
+  "displayName": "Glacier Language Support",
+  "description": "Syntax highlighting and editor support for the Glacier specification language.",
   "version": "0.0.1",
+  "publisher": "acm-ribeiro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acm-ribeiro/glacier-lang.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acm-ribeiro/glacier-lang/issues"
+  },
+  "homepage": "https://github.com/acm-ribeiro/glacier-lang#readme",
   "engines": {
     "vscode": "^1.125.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "keywords": [
+    "glacier",
+    "glc",
+    "specification language",
+    "syntax highlighting"
+  ],
   "contributes": {
-    "languages": [{
-      "id": "glacier",
-      "aliases": ["Glacier", "glacier"],
-      "extensions": [".glc"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "glacier",
-      "scopeName": "source.glacier",
-      "path": "./syntaxes/glacier.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "glacier",
+        "aliases": [
+          "Glacier",
+          "glacier"
+        ],
+        "extensions": [
+          ".glc"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "glacier",
+        "scopeName": "source.glacier",
+        "path": "./syntaxes/glacier.tmLanguage.json"
+      }
+    ]
   }
 }
