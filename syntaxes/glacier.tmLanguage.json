@@ -1,40 +1,93 @@
- {
+{
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "GLACIER",
   "scopeName": "source.glacier",
   "patterns": [
-    { "include": "#operation-header" },
-    { "include": "#glacier-keys" },
-    { "include": "#glacier-expression" },
-    { "include": "source.yaml" }
+    {
+      "include": "#operation-header"
+    },
+    {
+      "include": "#glacier-keys"
+    },
+    {
+      "include": "#formula-line"
+    },
+    {
+      "include": "source.yaml"
+    }
   ],
   "repository": {
     "operation-header": {
       "match": "^(GET|POST|PUT|DELETE)(\\s+)(\\S+)(\\s*:)",
       "captures": {
-        "1": { "name": "keyword.other.http-method.glacier" },
-        "3": { "name": "entity.name.tag.path.glacier" },
-        "4": { "name": "punctuation.separator.key-value.glacier" }
+        "1": {
+          "name": "keyword.other.http-method.glacier"
+        },
+        "3": {
+          "name": "entity.name.tag.path.glacier"
+        },
+        "4": {
+          "name": "punctuation.separator.key-value.glacier"
+        }
       }
     },
     "glacier-keys": {
       "match": "^\\s*(invariants|requires|ensures)\\s*:",
       "captures": {
-        "1": { "name": "keyword.control.glacier" }
+        "1": {
+          "name": "keyword.control.glacier"
+        }
       }
+    },
+    "formula-line": {
+      "begin": "^(\\s*-\\s*)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.list.begin.glacier"
+        }
+      },
+      "end": "$",
+      "patterns": [
+        {
+          "include": "#glacier-expression"
+        },
+        {
+          "include": "#strings"
+        }
+      ]
     },
     "glacier-expression": {
       "patterns": [
-        { "include": "#keywords" },
-        { "include": "#operations" },
-        { "include": "#booleans" },
-        { "include": "#novalue" },
-        { "include": "#this-kw" },
-        { "include": "#operators" },
-        { "include": "#response-code" },
-        { "include": "#numbers" },
-        { "include": "#function-call" },
-        { "include": "#punctuation" }
+        {
+          "include": "#keywords"
+        },
+        {
+          "include": "#operations"
+        },
+        {
+          "include": "#booleans"
+        },
+        {
+          "include": "#novalue"
+        },
+        {
+          "include": "#this-kw"
+        },
+        {
+          "include": "#operators"
+        },
+        {
+          "include": "#response-code"
+        },
+        {
+          "include": "#numbers"
+        },
+        {
+          "include": "#member-access"
+        },
+        {
+          "include": "#punctuation"
+        }
       ]
     },
     "keywords": {
@@ -69,13 +122,31 @@
       "match": "-?\\b[0-9]+\\b",
       "name": "constant.numeric.integer.glacier"
     },
-    "function-call": {
+    "member-access": {
       "match": "\\.([A-Za-z_@][A-Za-z0-9_@\\-]*)",
-      "name": "entity.name.function.glacier"
+      "captures": {
+        "1": {
+          "name": "variable.other.property.glacier"
+        }
+      }
     },
     "punctuation": {
       "match": "[{}()\\[\\]/]",
       "name": "punctuation.glacier"
+    },
+    "strings": {
+      "patterns": [
+        {
+          "begin": "\"",
+          "end": "\"",
+          "name": "string.quoted.double.glacier"
+        },
+        {
+          "begin": "'",
+          "end": "'",
+          "name": "string.quoted.single.glacier"
+        }
+      ]
     }
   }
 }
