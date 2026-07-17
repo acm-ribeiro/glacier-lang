@@ -2,14 +2,14 @@
 <table align="center">
   <tr>
     <td>
-<pre style="background: transparent; border: none;">
+<pre style="color: purple; background: transparent; border: 2px solid purple; border-radius: 10px;">
                _/\_         _/\_
           _/\_/    \_/\_/\_/    \_/\
       _/\_/                        \_\_/\
   ___/                                  \___
  /__________________________________________\
- /           █▀▀ █   ▄▀█ █▀▀ █ █▀▀ █▀█      \
- /           █▄█ █▄▄ █▀█ █▄▄ █ ██▄ █▀▄      \
+ /         █▀▀ █   ▄▀█ █▀▀ █ █▀▀ █▀█        \
+ /         █▄█ █▄▄ █▀█ █▄▄ █ ██▄ █▀▄        \
  /__________________________________________\
  \\\\      ////      ////      ////      ////
   \\\\____////______////______////______////
@@ -17,6 +17,7 @@
     </td>
   </tr>
 </table>
+
 
 <div align="center">
   <span style="font-size: 2em; font-weight: bold;">
