@@ -111,7 +111,7 @@
       "name": "variable.language.this.glacier"
     },
     "operators": {
-      "match": "(==|!=|<=|>=|<|>|&&|\\|\\||=>|:-)",
+      "match": "(==|!=|<=|>=|<|>|&&|\\|\\||=>|:-|:)",
       "name": "keyword.operator.glacier"
     },
     "response-code": {
